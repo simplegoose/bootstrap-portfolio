@@ -23,7 +23,7 @@
   </head>
   <body class="bg-light">
     <header class="header navbar navbar-expand-lg bg-white">
-      <div class="container-fluid px-5 py-2">
+      <div class="container-fluid px-5 py-2" id="navbar">
         <a href="#" class="navbar-brand col-8">Portfolio</a>
         <nav class="collapse navbar-collapse col-4">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -35,15 +35,15 @@
       </div>
     </header>
 
-    <main class="bg-white">
+    <main class="bg-white" data-bs-spy="scroll" data-bs-target="#navbar-example2">
       <div class="container py-5 w-100">
         <section class="col py-5 bg-white" id="home">
-          <h1 class="fs-1 w-50 mb-4">I’m Alex Glad to see you!</h1>
+          <h1 class="fs-1 w-50 mb-4">We're Alex and Tim, Glad to see you!</h1>
           <p class="mb-4">
-            I’m a software developer! I can help you build a product, feature or
-            website Look through some of my work and experience! If you like
+            We are software developers! We can help you build a product, feature or
+            website. Look through some of our work and experience! If you like
             what you see and have a project you need coded, don’t hestiate to
-            contact me.
+            contact us.
           </p>
           <span>LET’S CONNECT</span>
           <ul class="d-flex mt-2 fs-5 list-unstyled gap-3 mt-4">
@@ -62,15 +62,15 @@
           </ul>
         </section>
       </div>
-      <section class="col bg-light" id="portfolio">
+      <section class="col bg-light position-relative" id="portfolio">
         <div class="container">
           <div class="container py-5">
         <article class="card row flex-row p-3 my-4 rounded-2">
           <div class="col-12 col-md-6">
-            <img src="./images/Snapshoot Portfolio4.png" alt="Portfolio 4 screenshot" class="mw-100"/>
+            <img src="./images/Snapshoot Portfolio4.png" alt="Portfolio 4 screenshot" class="mw-100 card-image"/>
           </div>
-          <div class="col-12 col-md-6 d-flex flex-column p-3 gap-3">
-            <h1>Tonic</h1>
+          <div class="col-12 col-md-6 d-flex flex-column p-3 gap-3 card-body">
+            <h1 class="card-title">Tonic</h1>
             <ul class="list-unstyled d-flex gap-2">
               <li>CANOPY</li>
               <li class="text-secondary">&#9642;</li>
@@ -78,7 +78,7 @@
               <li class="text-secondary">&#9642;</li>
               <li>2015</li>
             </ul>
-            <p></p>
+            <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
             <ul class="list-unstyled d-flex gap-2">
               <li class="badge bg-light text-primary">HTML</li>
               <li class="badge bg-light text-primary">CSS</li>
@@ -92,10 +92,10 @@
         </article>
         <article class="row card flex-row p-3 mt-4 mb-4 rounded-4">
           <div class="col-12 col-md-6">
-            <img src="./images/Snapshoot Portfolio3.png" alt="Portfolio 3 screenshot" class="mw-100"/>
+            <img src="./images/Snapshoot Portfolio3.png" alt="Portfolio 3 screenshot" class="mw-100 card-image"/>
           </div>
-          <div class="col-12 col-md-6 d-flex flex-column p-3 gap-3">
-            <h1>Multi-Post Stories</h1>
+          <div class="col-12 col-md-6 d-flex flex-column p-3 gap-3 card-body">
+            <h1 class="card-title">Multi-Post Stories</h1>
             <ul class="list-unstyled d-flex gap-2">
               <li>FACEBOOK</li>
               <li class="text-secondary">&#9642;</li>
@@ -103,7 +103,7 @@
               <li class="text-secondary">&#9642;</li>
               <li>2015</li>
             </ul>
-            <p></p>
+            <p class="card-text">Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
             <ul class="list-unstyled d-flex gap-2">
               <li class="badge bg-light text-primary">HTML</li>
               <li class="badge bg-light text-primary">CSS</li>
@@ -117,10 +117,10 @@
         </article>
         <article class="row card flex-row p-3 mt-4 mb-4 rounded-4">
           <div class="col-12 col-md-6">
-            <img src="./images/Snapshoot Portfolio2.png" alt="Portfolio 2 screenshot" class="mw-100"/>
+            <img src="./images/Snapshoot Portfolio2.png" alt="Portfolio 2 screenshot" class="mw-100 card-image"/>
           </div>
-          <div class="col-12 col-md-6 d-flex flex-column p-3 gap-3">
-            <h1>Facebook 360</h1>
+          <div class="col-12 col-md-6 d-flex flex-column p-3 gap-3 card-body">
+            <h1 class="card-title">Facebook 360</h1>
             <ul class="list-unstyled d-flex gap-2">
               <li>FACEBOOK</li>
               <li class="text-secondary">&#9642;</li>
@@ -128,7 +128,7 @@
               <li class="text-secondary">&#9642;</li>
               <li>2015</li>
             </ul>
-            <p></p>
+            <p class="card-text">Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
             <ul class="list-unstyled d-flex gap-2">
               <li class="badge bg-light text-primary">HTML</li>
               <li class="badge bg-light text-primary">CSS</li>
@@ -142,10 +142,10 @@
         </article>
         <article class="row card flex-row p-3 mt-4 mb-4 rounded-4">
           <div class="col-12 col-md-6">
-            <img src="./images/Snapshoot Portfolio1.png" alt="Portfolio 1 screenshot" class="mw-100"/>
+            <img src="./images/Snapshoot Portfolio1.png" alt="Portfolio 1 screenshot" class="mw-100 card-image"/>
           </div>
-          <div class="col-12 col-md-6 d-flex flex-column p-3 gap-3">
-            <h1 class="">Uber Navigation</h1>
+          <div class="col-12 col-md-6 d-flex flex-column p-3 gap-3 card-body">
+            <h1 class="card-title">Uber Navigation</h1>
             <ul class="list-unstyled d-flex gap-2">
               <li>Uber</li>
               <li class="text-secondary">&#9642;</li>
@@ -153,7 +153,7 @@
               <li class="text-secondary">&#9642;</li>
               <li>2010</li>
             </ul>
-            <p></p>
+            <p class="card-text">A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
             <ul class="list-unstyled d-flex gap-2">
               <li class="badge bg-light text-primary">HTML</li>
               <li class="badge bg-light text-primary">CSS</li>
@@ -167,7 +167,7 @@
         </div>
         </article>
       </section>
-      <section class="row p-5" id="about">
+      <section class="row p-5 position-relative" id="about">
         <div class="col-md-5 col-lg-5 col-12 mb-4">
           <h2>About Myself</h2>
           <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -214,13 +214,14 @@
               </li>
             </ul>
           </div>
-          <div class="row border-bottom px-3 w-100 mb-3"><h3 class="col-11 col-lg-11 col-sm-11">Frameworks</h3><i class="bi bi-chevron-right fs-6 col-1 col-lg-1 col-sm-1"></i>
-</div>
+          <div class="row border-bottom px-3 w-100 mb-3">
+            <h3 class="col-11 col-lg-11 col-sm-11">Frameworks</h3><i class="bi bi-chevron-right fs-6 col-1 col-lg-1 col-sm-1"></i>
+          </div>
           <div class="row border-bottom px-3 w-100"><h3 class="col-11 col-lg-11 col-sm-11">Skills</h3><i class="bi bi-chevron-right fs-6 col-1 col-lg-1 col-sm-1"></i>
-</div>
+          </div>
         </div>
       </section>
-      <section class="row bg-primary text-white text-center p-5" id="contact">
+      <section class="row bg-primary text-white text-center p-5 position-relative" id="contact">
         <div class="col-12 col-md-7 col-lg-7 m-auto">
           <h1>Contact me</h1>
           <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
